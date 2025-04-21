@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - TechTrends</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      background: #0f0f0f;
+      overflow-x: hidden;
+    }
+
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(to right, #001f3f, #003366, #004c99);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar h1 {
+      font-size: 1.8rem;
+      color: #00ffff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .navbar ul li a:hover,
+    .navbar ul li a.active {
+      background: rgba(0, 255, 255, 0.2);
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid #00ffff66;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #00ffff44;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      flex: 1 1 200px;
+    }
+
+    .profile-img img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #00ffff;
+      object-fit: cover;
+      box-shadow: 0 0 15px #00ffff77;
+    }
+
+    .profile-details {
+      flex: 2 1 300px;
+    }
+
+    .profile-details h2 {
+      font-size: 2rem;
+      background: linear-gradient(to right, cyan, magenta);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-details p {
+      margin-bottom: 0.6rem;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .profile-details a {
+      color: #00ffff;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .profile-details a:hover {
+      color: #ff69b4;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="video-background">
+    <source src="https://videos.pexels.com/video-files/3129957/3129957-sd_640_360_25fps.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <header class="navbar">
+    <h1>TechTrends</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-container">
+    <div class="profile-img">
+      <img src="https://i.ytimg.com/vi/OJlKfTKI6Bs/maxresdefault.jpg" alt="Author Photo">
+    </div>
+    <div class="profile-details">
+      <h2>M.V.AKHIL</h2>
+      <p><strong>Qualifications:</strong> B.Tech in Computer Science, With specialization in AI & ML</p>
+      <p><strong>Role:</strong> Full Stack Developer | AI Enthusiast</p>
+      <p><strong>Email:</strong> akhilmuthavarapu1@gmail.com</p>
+      <p><strong>Experience:</strong> 5+ years in python </p>
+      <p>
+        <a href="https://www.linkedin.com/in/venkata-akhil-muthavarapu-12042424a/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/akhilmuthavarapu" target="_blank">GitHub</a>
+        
+      </p>
+    </div>
+  </section>
+</body>
+</html>
